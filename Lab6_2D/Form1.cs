@@ -9,6 +9,8 @@ namespace WindowsFormsApp1
 		public Form1()
 		{
 			InitializeComponent();
+			Button_Zapoln_Click(null, null);
+			Button_Create_Diagr_Click(null, null);
 		}
 
 		#region Диаграмма
@@ -49,7 +51,7 @@ namespace WindowsFormsApp1
 			Int16 t = Convert.ToInt16(numericUpDown_Tip.Value); // тип диаграммы
 
 			// заголовок диаграммы
-			string s = "Студент Иванов. Вар.7. Диаграмма - ";
+			string s = "Студент Кашафутдинова Вар.7. Диаграмма - ";
 			if (radioButton_Column.Checked)
 				s += "ряд. Тип " + t.ToString();
 			else s += "график. Тип " + t.ToString();
@@ -156,7 +158,8 @@ namespace WindowsFormsApp1
 					   // ищем пределы У для согласования координат
 			for (xi = xmin; xi <= xmax; xi += dx)
 			{
-				yi = xi / (1 + Math.Abs(Math.Sin(xi)));
+				//yi = xi / (1 + Math.Abs(Math.Sin(xi)));
+				yi = Math.Cos(xi) / (1 + xi);
 				if (xi == xmin)  // первая точка
 				{ ymin = yi; ymax = yi; }
 				else
@@ -189,7 +192,8 @@ namespace WindowsFormsApp1
 			int i = 0; // индекс массива
 			for (xi = xmin; xi <= xmax; xi += dx)
 			{
-				yi = xi / (1 + Math.Abs(Math.Sin(xi)));
+				//yi = xi / (1 + Math.Abs(Math.Sin(xi)));
+				yi = Math.Cos(xi) / (1 + xi);
 				YX[i].X = (int)(Xmin + kX * (xi - xmin));
 				YX[i].Y = (int)(Ymin + kY * (yi - ymin));
 

@@ -28,9 +28,9 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-			System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+			System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
 			this.label1 = new System.Windows.Forms.Label();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.TP_Chart = new System.Windows.Forms.TabPage();
@@ -85,9 +85,9 @@
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.label1.Location = new System.Drawing.Point(12, 9);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(162, 15);
+			this.label1.Size = new System.Drawing.Size(392, 15);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Группа _ _ _ Вариант 7";
+			this.label1.Text = "Группа АСУз-18. Студент Кашафутдинова Д.О. Вариант 7";
 			// 
 			// tabControl1
 			// 
@@ -246,16 +246,16 @@
 			// chart1
 			// 
 			this.chart1.BorderSkin.SkinStyle = System.Windows.Forms.DataVisualization.Charting.BorderSkinStyle.FrameThin3;
-			chartArea1.Name = "ChartArea1";
-			this.chart1.ChartAreas.Add(chartArea1);
-			legend1.Name = "Legend1";
-			this.chart1.Legends.Add(legend1);
+			chartArea4.Name = "ChartArea1";
+			this.chart1.ChartAreas.Add(chartArea4);
+			legend4.Name = "Legend1";
+			this.chart1.Legends.Add(legend4);
 			this.chart1.Location = new System.Drawing.Point(361, 6);
 			this.chart1.Name = "chart1";
-			series1.ChartArea = "ChartArea1";
-			series1.Legend = "Legend1";
-			series1.Name = "Series1";
-			this.chart1.Series.Add(series1);
+			series4.ChartArea = "ChartArea1";
+			series4.Legend = "Legend1";
+			series4.Name = "Series1";
+			this.chart1.Series.Add(series4);
 			this.chart1.Size = new System.Drawing.Size(401, 223);
 			this.chart1.TabIndex = 1;
 			this.chart1.Text = "chart1";
@@ -274,22 +274,22 @@
 			// radioButton2
 			// 
 			this.radioButton2.AutoSize = true;
-			this.radioButton2.Checked = true;
 			this.radioButton2.Location = new System.Drawing.Point(6, 42);
 			this.radioButton2.Name = "radioButton2";
 			this.radioButton2.Size = new System.Drawing.Size(109, 17);
 			this.radioButton2.TabIndex = 1;
-			this.radioButton2.TabStop = true;
 			this.radioButton2.Text = "Геометрическая";
 			this.radioButton2.UseVisualStyleBackColor = true;
 			// 
 			// radioButton_arifm
 			// 
 			this.radioButton_arifm.AutoSize = true;
+			this.radioButton_arifm.Checked = true;
 			this.radioButton_arifm.Location = new System.Drawing.Point(6, 19);
 			this.radioButton_arifm.Name = "radioButton_arifm";
 			this.radioButton_arifm.Size = new System.Drawing.Size(112, 17);
 			this.radioButton_arifm.TabIndex = 0;
+			this.radioButton_arifm.TabStop = true;
 			this.radioButton_arifm.Text = "Арифметическая";
 			this.radioButton_arifm.UseVisualStyleBackColor = true;
 			// 
@@ -311,8 +311,6 @@
 			// 
 			// button_Picture_Clear
 			// 
-			this.button_Picture_Clear.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
 			this.button_Picture_Clear.Location = new System.Drawing.Point(687, 251);
 			this.button_Picture_Clear.Name = "button_Picture_Clear";
 			this.button_Picture_Clear.Size = new System.Drawing.Size(75, 30);
@@ -344,7 +342,6 @@
 			// 
 			// button_Picture_Back
 			// 
-			this.button_Picture_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.button_Picture_Back.BackColor = System.Drawing.Color.White;
 			this.button_Picture_Back.Location = new System.Drawing.Point(143, 251);
 			this.button_Picture_Back.Name = "button_Picture_Back";
